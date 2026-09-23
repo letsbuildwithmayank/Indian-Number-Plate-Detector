@@ -1,12 +1,13 @@
 <div align="center">
 
-# 🚗 Indian Number Plate Detector
+# Indian Number Plate Detector
 
 **A YOLOv8 detector that finds number plates on Indian vehicles**
 
 `mAP50 0.967` · `Precision 0.964` · `Recall 0.935` · `~40ms inference`
 
-Built with Mayank
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_it_now-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://indian-plate-detector.streamlit.app/)
+[![Email](https://img.shields.io/badge/Built_with_Mayank-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:letsbuildwithmayank@gmail.com)
 
 </div>
 
@@ -188,16 +189,22 @@ python train.py
 
 ## Demo
 
+**[→ Try the live demo](https://indian-plate-detector.streamlit.app/)** — no setup needed, just upload a photo.
+
+Or run it locally:
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The Streamlit app shows:
+The app shows:
 
 - **Left** — the uploaded image with detections drawn, each plate cropped out separately, and the raw model output as JSON and as a table
 - **Right** — a live pipeline view that lights up step by step as the image is processed, with inference timing and how many boxes survived filtering
 - **Confidence slider** to see how the threshold changes what gets detected
+
+> The hosted demo runs on a CPU-only container, so inference there takes a few seconds. On a GPU the same model runs in ~40 ms.
 
 ---
 
@@ -258,6 +265,8 @@ assets/             training curves and sample outputs
 
 <div align="center">
 
-Built with Mayank
+**[Live Demo](https://indian-plate-detector.streamlit.app/)** · **[GitHub](https://github.com/letsbuildwithmayank/Indian-Number-Plate-Detector)**
+
+Built with Mayank · [letsbuildwithmayank@gmail.com](mailto:letsbuildwithmayank@gmail.com)
 
 </div>
