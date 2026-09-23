@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Datasets (too large for git — download links in README)
+data/
+dataset/
+dataset_olx/
+*.zip
+
+# Training output
+runs/
+test_output/
+test_images/
+
+# Pretrained base models (auto-downloaded by ultralytics)
+yolov8*.pt
+yolo11*.pt
+yolo26*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit
+gcloud-key.json
+*.env
